@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:transitionGroup="true">
+
+    <!-- TODO: Try to align the queue bar with the playback bar. -->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/explore_nav_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="org.metroN.boomingC.ui.BottomSheetContentBehavior"
+        app:navGraph="@navigation/nav_explore"
+        tools:layout="@layout/fragment_home" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/playback_sheet"
+        style="@style/Widget.Auxio.DisableDropShadows"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="org.metroN.boomingC.playback.PlaybackBottomSheetBehavior">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/playback_bar_fragment"
+            android:name="org.metroN.boomingC.playback.PlaybackBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/playback_panel_fragment"
+            android:name="org.metroN.boomingC.playback.PlaybackPanelFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="org.metroN.boomingC.ui.BottomSheetContentBehavior" />
+
+        <LinearLayout
+            android:id="@+id/queue_sheet"
+            style="@style/Widget.Auxio.DisableDropShadows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="org.metroN.boomingC.playback.queue.QueueBottomSheetBehavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/handle_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_bottom_sheet_bar">
+
+                <ImageView
+                    android:id="@+id/handle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_btn"
+                    android:contentDescription="@string/desc_queue_bar"
+                    android:paddingBottom="@dimen/spacing_mid_large"
+                    android:scaleType="center"
+                    android:src="@drawable/ui_queue_drag_handle"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="?attr/colorOnSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/queue_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_queue"
+                    android:textAppearance="@style/TextAppearance.Auxio.LabelLarge"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    app:layout_constraintBottom_toBottomOf="@+id/handle"
+                    app:layout_constraintEnd_toEndOf="@+id/handle"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/queue_fragment"
+                android:name="org.metroN.boomingC.playback.queue.QueueFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
