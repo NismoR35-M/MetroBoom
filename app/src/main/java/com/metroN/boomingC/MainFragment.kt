@@ -1,20 +1,3 @@
-/*
- * Copyright (c) 2023 Auxio Project
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
- 
 package com.metroN.boomingC
 
 import android.os.Bundle
@@ -36,17 +19,17 @@ import com.google.android.material.transition.MaterialFadeThrough
 import dagger.hilt.android.AndroidEntryPoint
 import kotlin.math.max
 import kotlin.math.min
-import org.metroN.boomingC.databinding.FragmentMainBinding
-import org.metroN.boomingC.list.selection.SelectionViewModel
-import org.metroN.boomingC.music.Music
-import org.metroN.boomingC.music.Song
-import org.metroN.boomingC.playback.PlaybackBottomSheetBehavior
-import org.metroN.boomingC.playback.PlaybackViewModel
-import org.metroN.boomingC.playback.queue.QueueBottomSheetBehavior
-import org.metroN.boomingC.ui.MainNavigationAction
-import org.metroN.boomingC.ui.NavigationViewModel
-import org.metroN.boomingC.ui.ViewBindingFragment
-import org.metroN.boomingC.util.*
+import com.metroN.boomingC.databinding.FragmentMainBinding
+import com.metroN.boomingC.list.selection.SelectionViewModel
+import com.metroN.boomingC.music.Music
+import com.metroN.boomingC.music.Song
+import com.metroN.boomingC.playback.PlaybackBottomSheetBehavior
+import com.metroN.boomingC.playback.PlaybackViewModel
+import com.metroN.boomingC.playback.queue.QueueBottomSheetBehavior
+import com.metroN.boomingC.ui.MainNavigationAction
+import com.metroN.boomingC.ui.NavigationViewModel
+import com.metroN.boomingC.ui.ViewBindingFragment
+import com.metroN.boomingC.util.*
 
 @AndroidEntryPoint
 class MainFragment :
