@@ -13,13 +13,11 @@ android {
     namespace "com.metroN.boomingC"
 
     defaultConfig {
-        applicationId namespace
-        versionName "3.0.2"
-        versionCode 26
-
         minSdk 21
         targetSdk 33
-
+        versionCode 1
+        versionName "0.0.1"
+        applicationId namespace
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -58,10 +56,10 @@ android {
 
 dependencies {
     // Kotlin
-    implementation "metroN.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation "metroN.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation "metroN.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'metroN.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
 
     // --- SUPPORT ---
 
