@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/spacing_medium">
 
-    <org.metroN.boomingC.image.StyledImageView
+    <com.metroN.boomingC.image.StyledImageView
         android:id="@+id/detail_cover"
         style="@style/Widget.Auxio.Image.Huge"
         app:layout_constraintStart_toStartOf="parent"

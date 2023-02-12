@@ -7,12 +7,12 @@
     android:background="?attr/colorSurface"
     android:transitionGroup="true">
 
-    <org.metroN.boomingC.ui.CoordinatorAppBarLayout
+    <com.metroN.boomingC.ui.CoordinatorAppBarLayout
         style="@style/Widget.Auxio.AppBarLayout"
         app:liftOnScroll="true"
         app:liftOnScrollTargetViewId="@id/search_recycler">
 
-        <org.metroN.boomingC.list.selection.SelectionToolbarOverlay
+        <com.metroN.boomingC.list.selection.SelectionToolbarOverlay
             android:id="@+id/search_selection_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -49,11 +49,11 @@
 
             </com.google.android.material.appbar.MaterialToolbar>
 
-        </org.metroN.boomingC.list.selection.SelectionToolbarOverlay>
+        </com.metroN.boomingC.list.selection.SelectionToolbarOverlay>
 
-    </org.metroN.boomingC.ui.CoordinatorAppBarLayout>
+    </com.metroN.boomingC.ui.CoordinatorAppBarLayout>
 
-    <org.metroN.boomingC.list.recycler.AuxioRecyclerView
+    <com.metroN.boomingC.list.recycler.AuxioRecyclerView
         android:id="@+id/search_recycler"
         style="@style/Widget.Auxio.RecyclerView.Grid"
         android:layout_width="match_parent"

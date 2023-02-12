@@ -9,7 +9,7 @@
     android:paddingEnd="@dimen/spacing_medium"
     android:paddingBottom="@dimen/spacing_mid_medium">
 
-    <org.metroN.boomingC.image.StyledImageView
+    <com.metroN.boomingC.image.StyledImageView
         android:id="@+id/detail_cover"
         style="@style/Widget.Auxio.Image.Large"
         app:layout_constraintStart_toStartOf="parent"
