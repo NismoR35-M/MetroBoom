@@ -16,7 +16,7 @@
         app:title="@string/lbl_playback"
         tools:subtitle="@string/lbl_all_songs" />
 
-    <org.metroN.boomingC.image.StyledImageView
+    <com.metroN.boomingC.image.StyledImageView
         android:id="@+id/playback_cover"
         style="@style/Widget.Auxio.Image.Full"
         android:layout_margin="@dimen/spacing_medium"
@@ -64,7 +64,7 @@
         tools:text="Album Name" />
 
 
-    <org.metroN.boomingC.playback.ui.StyledSeekBar
+    <com.metroN.boomingC.playback.ui.StyledSeekBar
         android:id="@+id/playback_seek_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <org.metroN.boomingC.playback.ui.ForcedLTRFrameLayout
+    <com.metroN.boomingC.playback.ui.ForcedLTRFrameLayout
         android:id="@+id/playback_controls_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/playback_play_pause"
                 app:layout_constraintTop_toTopOf="@+id/playback_play_pause" />
 
-            <org.metroN.boomingC.playback.ui.AnimatedMaterialButton
+            <com.metroN.boomingC.playback.ui.AnimatedMaterialButton
                 android:id="@+id/playback_play_pause"
                 style="@style/Widget.Auxio.Button.PlayPause"
                 android:layout_width="wrap_content"
@@ -154,6 +154,6 @@
                 app:tint="@color/sel_activatable_icon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </org.metroN.boomingC.playback.ui.ForcedLTRFrameLayout>
+    </com.metroN.boomingC.playback.ui.ForcedLTRFrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
