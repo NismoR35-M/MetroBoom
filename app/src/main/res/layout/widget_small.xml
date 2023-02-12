@@ -45,7 +45,7 @@
         android:layout_alignEnd="@id/widget_aspect_ratio"
         android:layout_alignBottom="@id/widget_aspect_ratio"
         android:src="@drawable/ic_remote_default_cover_24"
-        tools:ignore="ContentDescription" />
+        tools:ignore="AppName" />
 
     <!--
     We want to evenly space these buttons, but using a plain layout_weight system would result
