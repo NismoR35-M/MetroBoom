@@ -39,7 +39,7 @@
                     android:hint="@string/lbl_file_name"
                     app:expandedHintEnabled="false">
 
-                    <org.metroN.boomingC.detail.ReadOnlyTextInput
+                    <com.metroN.boomingC.detail.ReadOnlyTextInput
                         android:id="@+id/detail_file_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                     android:hint="@string/lbl_relative_path"
                     app:expandedHintEnabled="false">
 
-                    <org.metroN.boomingC.detail.ReadOnlyTextInput
+                    <com.metroN.boomingC.detail.ReadOnlyTextInput
                         android:id="@+id/detail_relative_dir"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                     android:hint="@string/lbl_format"
                     app:expandedHintEnabled="false">
 
-                    <org.metroN.boomingC.detail.ReadOnlyTextInput
+                    <com.metroN.boomingC.detail.ReadOnlyTextInput
                         android:id="@+id/detail_format"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                     android:hint="@string/lbl_size"
                     app:expandedHintEnabled="false">
 
-                    <org.metroN.boomingC.detail.ReadOnlyTextInput
+                    <com.metroN.boomingC.detail.ReadOnlyTextInput
                         android:id="@+id/detail_size"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                     android:hint="@string/lbl_sort_duration"
                     app:expandedHintEnabled="false">
 
-                    <org.metroN.boomingC.detail.ReadOnlyTextInput
+                    <com.metroN.boomingC.detail.ReadOnlyTextInput
                         android:id="@+id/detail_duration"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
                     android:hint="@string/lbl_bitrate"
                     app:expandedHintEnabled="false">
 
-                    <org.metroN.boomingC.detail.ReadOnlyTextInput
+                    <com.metroN.boomingC.detail.ReadOnlyTextInput
                         android:id="@+id/detail_bitrate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
                     android:hint="@string/lbl_sample_rate"
                     app:expandedHintEnabled="false">
 
-                    <org.metroN.boomingC.detail.ReadOnlyTextInput
+                    <com.metroN.boomingC.detail.ReadOnlyTextInput
                         android:id="@+id/detail_sample_rate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
