@@ -8,12 +8,12 @@
     android:background="?attr/colorSurface"
     android:transitionGroup="true">
 
-    <org.metroN.boomingC.ui.CoordinatorAppBarLayout
+    <com.metroN.boomingC.ui.CoordinatorAppBarLayout
         android:id="@+id/home_appbar"
         style="@style/Widget.Auxio.AppBarLayout"
         android:fitsSystemWindows="true">
 
-        <org.metroN.boomingC.list.selection.SelectionToolbarOverlay
+        <com.metroN.boomingC.list.selection.SelectionToolbarOverlay
             android:id="@+id/home_selection_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -26,7 +26,7 @@
                 app:menu="@menu/menu_home"
                 app:title="@string/info_app_name" />
 
-        </org.metroN.boomingC.list.selection.SelectionToolbarOverlay>
+        </com.metroN.boomingC.list.selection.SelectionToolbarOverlay>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/home_tabs"
@@ -37,7 +37,7 @@
             app:tabGravity="start"
             app:tabMode="scrollable" />
 
-    </org.metroN.boomingC.ui.CoordinatorAppBarLayout>
+    </com.metroN.boomingC.ui.CoordinatorAppBarLayout>
 
 
     <FrameLayout
@@ -56,7 +56,7 @@
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
             tools:layout="@layout/fragment_home_list" />
 
-        <org.metroN.boomingC.home.EdgeFrameLayout
+        <com.metroN.boomingC.home.EdgeFrameLayout
             android:id="@+id/home_indexing_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -114,15 +114,15 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-        </org.metroN.boomingC.home.EdgeFrameLayout>
+        </com.metroN.boomingC.home.EdgeFrameLayout>
 
     </FrameLayout>
 
-    <org.metroN.boomingC.home.EdgeFrameLayout
+    <com.metroN.boomingC.home.EdgeFrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_anchor="@id/home_content"
-        app:layout_anchorGravity="bottom|end">
+        app:layout_anchcomravity="bottom|end">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/home_fab"
@@ -133,6 +133,6 @@
             android:contentDescription="@string/desc_shuffle_all"
             android:src="@drawable/ic_shuffle_off_24" />
 
-    </org.metroN.boomingC.home.EdgeFrameLayout>
+    </com.metroN.boomingC.home.EdgeFrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

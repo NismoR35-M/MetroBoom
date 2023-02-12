@@ -7,13 +7,13 @@
     android:background="?attr/colorSurface"
     android:transitionGroup="true">
 
-    <org.metroN.boomingC.detail.DetailAppBarLayout
+    <com.metroN.boomingC.detail.DetailAppBarLayout
         android:id="@+id/detail_appbar"
         style="@style/Widget.Auxio.AppBarLayout"
         app:liftOnScroll="true"
         app:liftOnScrollTargetViewId="@id/detail_recycler">
 
-        <org.metroN.boomingC.list.selection.SelectionToolbarOverlay
+        <com.metroN.boomingC.list.selection.SelectionToolbarOverlay
             android:id="@+id/detail_selection_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -24,12 +24,12 @@
                 android:layout_height="wrap_content"
                 app:navigationIcon="@drawable/ic_back_24" />
 
-        </org.metroN.boomingC.list.selection.SelectionToolbarOverlay>
+        </com.metroN.boomingC.list.selection.SelectionToolbarOverlay>
 
 
-    </org.metroN.boomingC.detail.DetailAppBarLayout>
+    </com.metroN.boomingC.detail.DetailAppBarLayout>
 
-    <org.metroN.boomingC.list.recycler.AuxioRecyclerView
+    <com.metroN.boomingC.list.recycler.AuxioRecyclerView
         android:id="@+id/detail_recycler"
         style="@style/Widget.Auxio.RecyclerView.Grid"
         android:layout_width="match_parent"

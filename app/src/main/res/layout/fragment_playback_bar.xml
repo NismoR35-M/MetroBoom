@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
 
-    <org.metroN.boomingC.image.StyledImageView
+    <com.metroN.boomingC.image.StyledImageView
         android:id="@+id/playback_cover"
         style="@style/Widget.Auxio.Image.Small"
         android:layout_margin="@dimen/spacing_small"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/playback_song"
         tools:text="Artist Name" />
 
-    <org.metroN.boomingC.playback.ui.ForcedLTRFrameLayout
+    <com.metroN.boomingC.playback.ui.ForcedLTRFrameLayout
         android:id="@+id/playback_controls_wrapper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,9 +74,9 @@
                 tools:icon="@drawable/ic_skip_next_24" />
         </LinearLayout>
 
-    </org.metroN.boomingC.playback.ui.ForcedLTRFrameLayout>
+    </com.metroN.boomingC.playback.ui.ForcedLTRFrameLayout>
 
-    <org.metroN.boomingC.playback.ui.ForcedLTRFrameLayout
+    <com.metroN.boomingC.playback.ui.ForcedLTRFrameLayout
         android:id="@+id/playback_progress_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -92,6 +92,6 @@
             android:layout_marginEnd="@dimen/spacing_small"
             tools:progress="70" />
 
-    </org.metroN.boomingC.playback.ui.ForcedLTRFrameLayout>
+    </com.metroN.boomingC.playback.ui.ForcedLTRFrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

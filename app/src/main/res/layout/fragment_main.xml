@@ -15,7 +15,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="org.metroN.boomingC.ui.BottomSheetContentBehavior"
+        app:layout_behavior="com.metroN.boomingC.ui.BottomSheetContentBehavior"
         app:navGraph="@navigation/nav_explore"
         tools:layout="@layout/fragment_home" />
 
@@ -24,20 +24,20 @@
         style="@style/Widget.Auxio.DisableDropShadows"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="org.metroN.boomingC.playback.PlaybackBottomSheetBehavior">
+        app:layout_behavior="com.metroN.boomingC.playback.PlaybackBottomSheetBehavior">
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/playback_bar_fragment"
-            android:name="org.metroN.boomingC.playback.PlaybackBarFragment"
+            android:name="com.metroN.boomingC.playback.PlaybackBarFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/playback_panel_fragment"
-            android:name="org.metroN.boomingC.playback.PlaybackPanelFragment"
+            android:name="com.metroN.boomingC.playback.PlaybackPanelFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="org.metroN.boomingC.ui.BottomSheetContentBehavior" />
+            app:layout_behavior="com.metroN.boomingC.ui.BottomSheetContentBehavior" />
 
         <LinearLayout
             android:id="@+id/queue_sheet"
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            app:layout_behavior="org.metroN.boomingC.playback.queue.QueueBottomSheetBehavior">
+            app:layout_behavior="com.metroN.boomingC.playback.queue.QueueBottomSheetBehavior">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/handle_wrapper"
@@ -78,7 +78,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/queue_fragment"
-                android:name="org.metroN.boomingC.playback.queue.QueueFragment"
+                android:name="com.metroN.boomingC.playback.queue.QueueFragment"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
