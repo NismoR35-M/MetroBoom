@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:transitionGroup="true">
 
-    <org.metroN.boomingC.ui.CoordinatorAppBarLayout
+    <com.metroN.boomingC.ui.CoordinatorAppBarLayout
         android:id="@+id/preferences_appbar"
         style="@style/Widget.Auxio.AppBarLayout"
         android:clickable="true"
@@ -21,7 +21,7 @@
             app:navigationIcon="@drawable/ic_back_24"
             app:title="@string/set_root_title" />
 
-    </org.metroN.boomingC.ui.CoordinatorAppBarLayout>
+    </com.metroN.boomingC.ui.CoordinatorAppBarLayout>
 
     <FrameLayout
         android:id="@android:id/list_container"
