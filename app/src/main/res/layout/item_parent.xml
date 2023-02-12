@@ -10,7 +10,7 @@
     android:paddingEnd="@dimen/spacing_mid_medium"
     android:paddingBottom="@dimen/spacing_mid_medium">
 
-    <org.metroN.boomingC.image.ImageGroup
+    <com.metroN.boomingC.image.ImageGroup
         android:id="@+id/parent_image"
         style="@style/Widget.Auxio.Image.Medium"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground">
 
-            <org.metroN.boomingC.image.ImageGroup
+            <com.metroN.boomingC.image.ImageGroup
                 android:id="@+id/song_album_cover"
                 style="@style/Widget.Auxio.Image.Small"
                 android:layout_marginStart="@dimen/spacing_medium"
